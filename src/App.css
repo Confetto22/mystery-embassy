@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+/* :root {
+  --theme-cream: "#f4dcb5";
+  --theme-yellow: "#ffc646";
+  --theme-orange: "#ed5a2f";
+  --theme-green:'#404f40;
+} */
+body {
+  font-family: "Barlow", sans-serif;
+}
+.cover h1 {
+  /* font-size: 2.8rem; */
+  text-transform: uppercase;
+  line-height: 3.3rem;
+  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+  /* color: "#ed5a2f"; */
+}
+.cover p {
+  font-family: "Barlow";
+}
+.dancing_script {
+  font-family: "Dancing Script", cursive;
+}
+.welcome h2 {
+  background: -webkit-linear-gradient(#242424, #ed5a2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subhead,
+.mainhead {
+  font-family: "barlow", sans-serif;
+}
+.values .value:nth-child(3) {
+  border-right: none;
+  border-bottom: none;
+}
+.always_welcome {
+  font-family: "Dancing Script";
+}
+.upcoming_text h2 {
+  background: -webkit-linear-gradient(#ed5a2f, #ffc646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.leader .mainhead {
+  background: -webkit-linear-gradient(#ed5a2f, #262626);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.daddypic {
+  aspect-ratio: 6/7;
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
