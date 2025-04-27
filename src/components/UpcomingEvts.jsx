@@ -41,7 +41,7 @@ const UpcomingEvts = () => {
             <img
               src={evt.flyer}
               alt="mystery embassy"
-              className="max-w-[380px] md:w-[30%]"
+              className="md:max-w-[380px] w-full md:w-[30%]"
             />
             <div className="flex flex-col items-center gap-3 md:items-start md:gap-5">
               <p className="capitalize font-bold text-[1.4rem] md:text-[1.7rem]">
