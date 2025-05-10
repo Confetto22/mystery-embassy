@@ -3,6 +3,7 @@ import "./App.css";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
+import EvtDetail from "./components/common/EvtDetail";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:name" element={<EvtDetail />} />
           {/* <Route path="/about-us" element={<About />} />
           <Route path="/new-here" element={<NewHere />} />
           <Route path="/contact" element={<Contact />} />

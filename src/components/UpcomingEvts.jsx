@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { allEvents } from "./common/events";
 import CountDown from "./common/countdown/CountDown";
 
 const closestEvts = allEvents.slice(0, 3);
 
 const UpcomingEvts = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-24 upcoming_evts  flex flex-col gap-16 bg-[#1e1e1e] text-stone-200">
       <div className="upcoming_text px-8 text-center flex flex-col items-center justify-center gap-4">
@@ -53,12 +54,14 @@ const UpcomingEvts = () => {
               <p className="uppercase font-semibold text-[.9rem]">
                 {evt.month} {evt.day} @ {evt.time}
               </p>
-              <Link
+              <button
+                type="button"
+                onClick={() => navigate(`/${evt.name}`)}
                 to={evt.link}
                 className="uppercase border border-[#ffffff29] font-bold py-4 px-7 text-[.9rem]"
               >
                 view details
-              </Link>
+              </button>
             </div>
           </div>
         ))}

@@ -42,7 +42,7 @@ const HeroCard = () => {
           <p className="text-[1.1rem] font-semibold uppercase">
             restoration service
           </p>
-          <span className="dancing_script text-[2rem] text-[#ed5a2f] -rotate-30 absolute top-[10%] right-[20%] hidden md:flex bg-[#ffc646] font-bold px-2">
+          <span className="dancing_script text-[2rem] text-[#ffc646] -rotate-30 absolute top-[10%] right-[20%] hidden md:flex  font-bold px-2">
             join us
           </span>
         </div>
